@@ -1,6 +1,6 @@
 # Understanding Rounded Corners in PyQt/PySide6
 
-# Creating a widget with rounded corners in PyQt or PySide6 involves manipulating the widget's mask, which defines the shape of the widget. The provided code snippet accomplishes this through several methods within a widget class. Here’s a step-by-step explanation of how this code achieves rounded corners:
+ Creating a widget with rounded corners in PyQt or PySide6 involves manipulating the widget's mask, which defines the shape of the widget. The provided code snippet accomplishes this through several methods within a widget class. Here’s a step-by-step explanation of how this code achieves rounded corners:
 
 # paintEvent Method
 
@@ -11,7 +11,7 @@ def paintEvent(self, event):
     rect = self.rect()
     painter.fillRect(rect, self.palette().color(QtGui.QPalette.Window))
 
-# The paintEvent method handles the widget's painting operations. This method is called whenever the widget needs to be redrawn. Here’s what happens inside this method:
+ The paintEvent method handles the widget's painting operations. This method is called whenever the widget needs to be redrawn. Here’s what happens inside this method:
 
 # - A QPainter object is created, which allows for drawing operations on the widget.
 # - setRenderHint with QPainter.Antialiasing ensures that the drawing is smooth and edges are anti-aliased.
