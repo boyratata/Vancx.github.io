@@ -1,5 +1,3 @@
----
-
 ## Setting Up and Updating Discord Rich Presence
 
 ### `setup_discord_presence` Method
@@ -39,5 +37,3 @@ def update_presence(self):
   - `state`: Indicates the user's current activity state, such as "Listening to music".
   - `details`: Specifies detailed information, dynamically updating based on whether a song is currently playing (`self.current_song`).
   - `large_image`: Represents a large image key displayed in Discord.
-
----
